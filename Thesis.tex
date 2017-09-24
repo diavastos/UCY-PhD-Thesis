@@ -1,0 +1,224 @@
+\documentclass[a4paper,12pt,openright,oneside]{book}
+\usepackage{ucy}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0.0pt}
+\makenomenclature
+
+
+
+
+\begin{document}
+\onehalfspace
+
+\majoradviser{Dr. Name Surname}
+\associateadviser{Dr. Name Surname}
+\associateadviser{Dr. Name Surname}
+\associateadviser{Dr. Name Surname}
+\associateadviser{Dr. Name Surname}
+
+\pagenumbering{roman}
+
+\coverpage
+\copyrightpage
+\clearpage
+\setcounter{page}{1}
+\approvalpage
+\declarationpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% GREEK ABSTRACT %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{otherlanguage}{greek}	
+\chapter*{Περίληψη}
+Περίληψη....
+
+
+
+
+\end{otherlanguage}
+%%%%% REMOVE IF ABSTRACT USES THE 2ND PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% ENGLISH ABSTRACT %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Abstract}
+
+Abstract...
+
+
+
+
+%%%%% REMOVE IF ABSTRACT USES THE 2ND PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% ACKMOWLEDGEMENTS %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Acknowledgments}
+
+Acknowledgments goes here...
+
+%%%%% REMOVE IF ACK USES THE 2ND PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% CONTRIBUTION OF THE THESIS %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter*{Contributions of this Thesis}
+
+\singlespace
+\subsection*{Journal publications:}
+
+\begin{enumerate}
+	\item \textbf{A. Diavastos} and P. Trancoso. \textit{“SWITCHES: A Lightweight Runtime for Dataflow Execution of Tasks on Many-Cores”}, ACM Transactions on Architecture and Code Optimization (TACO) 14, 3, Article 31, August 2017.
+
+	\item \textbf{A. Diavastos}, P. Trancoso, M. Luj{\'a}n, I. Watson, \textit{“Integrating Transactions into the Data-Driven Multi-threading Model using the TFlux Platform”}, International Journal of Parallel Processing (IJPP) 44(2): 257-277, April 2016.	
+\end{enumerate}
+
+
+\subsection*{Conference and workshop proceedings:}
+
+\begin{enumerate}[resume]
+	\item \textbf{A. Diavastos} and P. Trancoso. \textit{“SWITCHES: A Lightweight Runtime for Dataflow Execution of Tasks on Many-Cores”}, ACM Transactions on Architecture and Code Optimization (TACO) 14, 3, Article 31, August 2017.
+	
+	\item \textbf{A. Diavastos}, P. Trancoso, M. Luj{\'a}n, I. Watson, \textit{“Integrating Transactions into the Data-Driven Multi-threading Model using the TFlux Platform”}, International Journal of Parallel Processing (IJPP) 44(2): 257-277, April 2016.	
+\end{enumerate}
+
+
+\subsection*{Technical reports:}
+
+\begin{enumerate}[resume]
+	\item \textbf{A. Diavastos} and P. Trancoso. \textit{“SWITCHES: A Lightweight Runtime for Dataflow Execution of Tasks on Many-Cores”}, ACM Transactions on Architecture and Code Optimization (TACO) 14, 3, Article 31, August 2017.
+	
+	\item \textbf{A. Diavastos}, P. Trancoso, M. Luj{\'a}n, I. Watson, \textit{“Integrating Transactions into the Data-Driven Multi-threading Model using the TFlux Platform”}, International Journal of Parallel Processing (IJPP) 44(2): 257-277, April 2016.	
+\end{enumerate}
+
+
+
+
+%%%%% REMOVE IF PUBLICATIONS USES THE 2ND PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+
+\onehalfspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+%%%%% REMOVE IF CONTENTS USES THE 2ND PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+\vspace{1in}
+\printnomenclature
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% LIST OF FIGURES %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\listoffigures
+%%%%% REMOVE IF FIGURES USES THE 2ND PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% LIST OF TABLES %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\listoftables
+%%%%% REMOVE IF TABLES USES THE 2ND PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTERS START HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%************************************%
+%*      CHAPTER: INTRODUCTION       *%
+%************************************%
+
+\include{Introduction}
+%%%%% REMOVE IF A CHAPTER FINISHES ON A LEFT PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+%************************************%
+%*      CHAPTER: RELATED WORK       *%
+%************************************%
+
+\include{Related}
+%%%%% REMOVE IF A CHAPTER FINISHES ON A LEFT PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+%************************************%
+%*          CHAPTER 1               *%
+%************************************%
+
+\include{Chapter1}
+%%%%% REMOVE IF A CHAPTER FINISHES ON A LEFT PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+%************************************%
+%*          CHAPTER 2               *%
+%************************************%
+
+\include{Chapter2}
+%%%%% REMOVE IF A CHAPTER FINISHES ON A LEFT PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+
+%************************************%
+%*      CHAPTER: CONCLUSIONS        *%
+%************************************%
+
+\include{Conclusions}
+%%%%% REMOVE IF A CHAPTER FINISHES ON A LEFT PAGE %%%%%
+%\newpage\null\thispagestyle{empty}\newpage
+\newpage
+
+%%%%%%%%%%%%%%%%%%%% ----------------------------------------------------------- %%%%%%%%%%%%%%%%%%%%
+
+\singlespace
+
+\bibliographystyle{IEEEtran} % to sort references based on first author's surname instead of order of appearance in text.
+
+\bibliography{IEEEfull,Thesis} %use the full names of the IEEE journals. Here Thesis.bib is assumed 
+
+%\appendix
+%\include{appendixA}
+
+
+\end{document}
+
+
